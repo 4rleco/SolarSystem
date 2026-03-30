@@ -136,6 +136,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earth
       objectReference: {fileID: 0}
+    - target: {fileID: 7218802702604163120, guid: f53bb6f8198f53a41bb546b61d194233, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     - target: {fileID: 8872628901958855497, guid: f53bb6f8198f53a41bb546b61d194233, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -195,6 +199,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7218802702604163120, guid: f53bb6f8198f53a41bb546b61d194233, type: 3}
       insertIndex: -1
       addedObject: {fileID: 85804029}
+    - targetCorrespondingSourceObject: {fileID: 7218802702604163120, guid: f53bb6f8198f53a41bb546b61d194233, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 85804034}
   m_SourcePrefab: {fileID: 100100000, guid: f53bb6f8198f53a41bb546b61d194233, type: 3}
 --- !u!1 &85804028 stripped
 GameObject:
@@ -219,6 +226,33 @@ MonoBehaviour:
   radX: 10
   radZ: 9.5
   inclination: 10
+--- !u!54 &85804034
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85804028}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &341063889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -230,6 +264,10 @@ PrefabInstance:
     - target: {fileID: 7218802702604163120, guid: a44c4ff6e85853a4f855bbbdc66d4d6c, type: 3}
       propertyPath: m_Name
       value: Uranus
+      objectReference: {fileID: 0}
+    - target: {fileID: 7218802702604163120, guid: a44c4ff6e85853a4f855bbbdc66d4d6c, type: 3}
+      propertyPath: m_TagString
+      value: Planet
       objectReference: {fileID: 0}
     - target: {fileID: 8872628901958855497, guid: a44c4ff6e85853a4f855bbbdc66d4d6c, type: 3}
       propertyPath: m_LocalScale.x
@@ -290,6 +328,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7218802702604163120, guid: a44c4ff6e85853a4f855bbbdc66d4d6c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 341063891}
+    - targetCorrespondingSourceObject: {fileID: 7218802702604163120, guid: a44c4ff6e85853a4f855bbbdc66d4d6c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 341063896}
   m_SourcePrefab: {fileID: 100100000, guid: a44c4ff6e85853a4f855bbbdc66d4d6c, type: 3}
 --- !u!1 &341063890 stripped
 GameObject:
@@ -314,6 +355,33 @@ MonoBehaviour:
   radX: 192
   radZ: 191.8
   inclination: 1
+--- !u!54 &341063896
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341063890}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +532,33 @@ MonoBehaviour:
   radX: 3.9
   radZ: 3.8
   inclination: 1
+--- !u!54 &554453501
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554453495}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &809133981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -475,6 +570,10 @@ PrefabInstance:
     - target: {fileID: 7218802702604163120, guid: 23108ea0333aa5d4788b32a6866e196a, type: 3}
       propertyPath: m_Name
       value: Mars
+      objectReference: {fileID: 0}
+    - target: {fileID: 7218802702604163120, guid: 23108ea0333aa5d4788b32a6866e196a, type: 3}
+      propertyPath: m_TagString
+      value: Planet
       objectReference: {fileID: 0}
     - target: {fileID: 8872628901958855497, guid: 23108ea0333aa5d4788b32a6866e196a, type: 3}
       propertyPath: m_LocalScale.x
@@ -535,6 +634,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7218802702604163120, guid: 23108ea0333aa5d4788b32a6866e196a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 809133983}
+    - targetCorrespondingSourceObject: {fileID: 7218802702604163120, guid: 23108ea0333aa5d4788b32a6866e196a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 809133988}
   m_SourcePrefab: {fileID: 100100000, guid: 23108ea0333aa5d4788b32a6866e196a, type: 3}
 --- !u!1 &809133982 stripped
 GameObject:
@@ -559,6 +661,33 @@ MonoBehaviour:
   radX: 15.2
   radZ: 15.1
   inclination: 1
+--- !u!54 &809133988
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809133982}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,6 +749,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Neptune
       objectReference: {fileID: 0}
+    - target: {fileID: 7218802702604163120, guid: 100fa7e56d858004ba3b36a07a55f91a, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     - target: {fileID: 8872628901958855497, guid: 100fa7e56d858004ba3b36a07a55f91a, type: 3}
       propertyPath: m_LocalScale.x
       value: 4
@@ -679,6 +812,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7218802702604163120, guid: 100fa7e56d858004ba3b36a07a55f91a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1018843470}
+    - targetCorrespondingSourceObject: {fileID: 7218802702604163120, guid: 100fa7e56d858004ba3b36a07a55f91a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1018843475}
   m_SourcePrefab: {fileID: 100100000, guid: 100fa7e56d858004ba3b36a07a55f91a, type: 3}
 --- !u!1 &1018843469 stripped
 GameObject:
@@ -703,6 +839,33 @@ MonoBehaviour:
   radX: 300
   radZ: 299.9
   inclination: 1
+--- !u!54 &1018843475
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018843469}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1022171043
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -714,6 +877,10 @@ PrefabInstance:
     - target: {fileID: 7218802702604163120, guid: da836958ea45d894397aaa1687fd2ac1, type: 3}
       propertyPath: m_Name
       value: Mercury
+      objectReference: {fileID: 0}
+    - target: {fileID: 7218802702604163120, guid: da836958ea45d894397aaa1687fd2ac1, type: 3}
+      propertyPath: m_TagString
+      value: Planet
       objectReference: {fileID: 0}
     - target: {fileID: 8872628901958855497, guid: da836958ea45d894397aaa1687fd2ac1, type: 3}
       propertyPath: m_LocalScale.x
@@ -774,6 +941,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7218802702604163120, guid: da836958ea45d894397aaa1687fd2ac1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 554453496}
+    - targetCorrespondingSourceObject: {fileID: 7218802702604163120, guid: da836958ea45d894397aaa1687fd2ac1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 554453501}
   m_SourcePrefab: {fileID: 100100000, guid: da836958ea45d894397aaa1687fd2ac1, type: 3}
 --- !u!1001 &1092456225
 PrefabInstance:
@@ -786,6 +956,10 @@ PrefabInstance:
     - target: {fileID: 7218802702604163120, guid: 87fb3b074e4fa364f81333a00ac67a8c, type: 3}
       propertyPath: m_Name
       value: Venus
+      objectReference: {fileID: 0}
+    - target: {fileID: 7218802702604163120, guid: 87fb3b074e4fa364f81333a00ac67a8c, type: 3}
+      propertyPath: m_TagString
+      value: Planet
       objectReference: {fileID: 0}
     - target: {fileID: 8872628901958855497, guid: 87fb3b074e4fa364f81333a00ac67a8c, type: 3}
       propertyPath: m_LocalScale.x
@@ -846,7 +1020,42 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7218802702604163120, guid: 87fb3b074e4fa364f81333a00ac67a8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1347063089}
+    - targetCorrespondingSourceObject: {fileID: 7218802702604163120, guid: 87fb3b074e4fa364f81333a00ac67a8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1347063094}
   m_SourcePrefab: {fileID: 100100000, guid: 87fb3b074e4fa364f81333a00ac67a8c, type: 3}
+--- !u!1 &1342514241 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7218802702604163120, guid: 247bcebeb5087754c9103f0cbd1a751a, type: 3}
+  m_PrefabInstance: {fileID: 1594394924}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1342514245
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342514241}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1347063084 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7218802702604163120, guid: 87fb3b074e4fa364f81333a00ac67a8c, type: 3}
@@ -870,6 +1079,33 @@ MonoBehaviour:
   radX: 7.2
   radZ: 7.2
   inclination: 1
+--- !u!54 &1347063094
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347063084}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1592032572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -881,6 +1117,10 @@ PrefabInstance:
     - target: {fileID: 7218802702604163120, guid: f3e37a6464a72e14db32f94b5468150b, type: 3}
       propertyPath: m_Name
       value: Jupiter
+      objectReference: {fileID: 0}
+    - target: {fileID: 7218802702604163120, guid: f3e37a6464a72e14db32f94b5468150b, type: 3}
+      propertyPath: m_TagString
+      value: Planet
       objectReference: {fileID: 0}
     - target: {fileID: 8872628901958855497, guid: f3e37a6464a72e14db32f94b5468150b, type: 3}
       propertyPath: m_LocalScale.x
@@ -941,6 +1181,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7218802702604163120, guid: f3e37a6464a72e14db32f94b5468150b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1592032574}
+    - targetCorrespondingSourceObject: {fileID: 7218802702604163120, guid: f3e37a6464a72e14db32f94b5468150b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1592032579}
   m_SourcePrefab: {fileID: 100100000, guid: f3e37a6464a72e14db32f94b5468150b, type: 3}
 --- !u!1 &1592032573 stripped
 GameObject:
@@ -965,6 +1208,33 @@ MonoBehaviour:
   radX: 52
   radZ: 51.9
   inclination: 1
+--- !u!54 &1592032579
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592032573}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1594394924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1035,7 +1305,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8872628901958855497, guid: 247bcebeb5087754c9103f0cbd1a751a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 410087041}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7218802702604163120, guid: 247bcebeb5087754c9103f0cbd1a751a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1342514245}
   m_SourcePrefab: {fileID: 100100000, guid: 247bcebeb5087754c9103f0cbd1a751a, type: 3}
 --- !u!1001 &1687733030
 PrefabInstance:
@@ -1048,6 +1321,10 @@ PrefabInstance:
     - target: {fileID: 7218802702604163120, guid: ee9e224f6b4891745a873322bdea43ce, type: 3}
       propertyPath: m_Name
       value: Pluto
+      objectReference: {fileID: 0}
+    - target: {fileID: 7218802702604163120, guid: ee9e224f6b4891745a873322bdea43ce, type: 3}
+      propertyPath: m_TagString
+      value: Planet
       objectReference: {fileID: 0}
     - target: {fileID: 8872628901958855497, guid: ee9e224f6b4891745a873322bdea43ce, type: 3}
       propertyPath: m_LocalScale.x
@@ -1108,6 +1385,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7218802702604163120, guid: ee9e224f6b4891745a873322bdea43ce, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1687733032}
+    - targetCorrespondingSourceObject: {fileID: 7218802702604163120, guid: ee9e224f6b4891745a873322bdea43ce, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1687733037}
   m_SourcePrefab: {fileID: 100100000, guid: ee9e224f6b4891745a873322bdea43ce, type: 3}
 --- !u!1 &1687733031 stripped
 GameObject:
@@ -1132,6 +1412,33 @@ MonoBehaviour:
   radX: 394
   radZ: 381.5
   inclination: 1
+--- !u!54 &1687733037
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687733031}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &2085032033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1143,6 +1450,10 @@ PrefabInstance:
     - target: {fileID: 7218802702604163120, guid: ee58a74e2ac147c498a361936a73aeb0, type: 3}
       propertyPath: m_Name
       value: Saturn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7218802702604163120, guid: ee58a74e2ac147c498a361936a73aeb0, type: 3}
+      propertyPath: m_TagString
+      value: Planet
       objectReference: {fileID: 0}
     - target: {fileID: 8872628901958855497, guid: ee58a74e2ac147c498a361936a73aeb0, type: 3}
       propertyPath: m_LocalScale.x
@@ -1203,6 +1514,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7218802702604163120, guid: ee58a74e2ac147c498a361936a73aeb0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2085032035}
+    - targetCorrespondingSourceObject: {fileID: 7218802702604163120, guid: ee58a74e2ac147c498a361936a73aeb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2085032040}
   m_SourcePrefab: {fileID: 100100000, guid: ee58a74e2ac147c498a361936a73aeb0, type: 3}
 --- !u!1 &2085032034 stripped
 GameObject:
@@ -1227,6 +1541,33 @@ MonoBehaviour:
   radX: 95.8
   radZ: 95.6
   inclination: 1
+--- !u!54 &2085032040
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085032034}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &8719371798023202618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1241,11 +1582,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 212033419592952388, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.81902826
+      value: -0.8
       objectReference: {fileID: 0}
     - target: {fileID: 212033419592952388, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.094029844
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 212033419592952388, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1283,12 +1624,28 @@ PrefabInstance:
       propertyPath: m_RenderPostProcessing
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3309966203708401375, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3309966203708401375, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
+      propertyPath: m_Constraints
+      value: 48
+      objectReference: {fileID: 0}
     - target: {fileID: 4576193736221306243, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 4987692626669267220, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
+      propertyPath: force
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4987692626669267220, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
       propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4987692626669267220, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
+      propertyPath: toqrueForce
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5199231655156409450, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
@@ -1369,35 +1726,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7859802807490123697, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.15
+      value: 0.1500001
       objectReference: {fileID: 0}
     - target: {fileID: 7859802807490123697, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.972
+      value: -4.244
       objectReference: {fileID: 0}
     - target: {fileID: 7859802807490123697, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.392
+      value: -1.804
       objectReference: {fileID: 0}
     - target: {fileID: 7859802807490123697, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.73380864
       objectReference: {fileID: 0}
     - target: {fileID: 7859802807490123697, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: -0.67935634
       objectReference: {fileID: 0}
     - target: {fileID: 7859802807490123697, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7859802807490123697, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7859802807490123697, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
+      value: -85.587
       objectReference: {fileID: 0}
     - target: {fileID: 7859802807490123697, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1405,6 +1762,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7859802807490123697, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455452312790344621, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455452312790344621, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8455452312790344621, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
@@ -1421,7 +1786,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8900119068710250974, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.990028
+      value: 14.97
       objectReference: {fileID: 0}
     - target: {fileID: 8900119068710250974, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
       propertyPath: m_LocalPosition.y
