@@ -4,17 +4,24 @@ using UnityEngine.UIElements;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private Engine leftEngine;
+    [SerializeField] private Engine rightEngine;
 
-    void Update()
+    private void Update()
     {
-        float movementY = 0;
+        //          INPUT
+        Vector3 movement = Vector3.zero;
+
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+        movement.z = 0;
         float roatateZ = 0;
 
         if (Input.GetKey(KeyCode.Space))
-            movementY = 1;
+            movement.z = -1;
 
         if (Input.GetKey(KeyCode.LeftShift))
-            movementY = -1;
+            movement.z = 1;
 
         if (Input.GetKey(KeyCode.Q))
             roatateZ = 1;
@@ -22,9 +29,12 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.E))
             roatateZ = -1;
 
-        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), movementY);
+        //          MOVEMENT
         transform.Rotate(0, 0, roatateZ);
         transform.Translate(movement * (speed * Time.deltaTime));
 
+        //          SFX
+        leftEngine.Set(movement.x > 0);
+        rightEngine.Set(movement.x < 0);
     }
 }
