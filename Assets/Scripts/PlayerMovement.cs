@@ -8,8 +8,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Engine leftEngine;
     [SerializeField] private Engine rightEngine;
     [SerializeField] private float force;
-    [SerializeField] private float toqrueForce;
+    [SerializeField] private float torqueForce;
     [SerializeField] private ForceMode forceMode;
+    [SerializeField] private ForceMode torqueForceMode;
 
     private Rigidbody rigidbody;
 
@@ -26,14 +27,14 @@ public class PlayerMovement : MonoBehaviour
         float rotateZ = 0;
 
         movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-        movement.z = 0;
+        movement.y = 0;
+        movement.z = Input.GetAxisRaw("Vertical");
 
         if (Input.GetKey(KeyCode.Space))
-            movement.z = -1;
+            movement.y = 1;
 
         if (Input.GetKey(KeyCode.LeftShift))
-            movement.z = 1;
+            movement.y = -1;
 
         if (Input.GetKey(KeyCode.Q))
             rotateZ = 1;
@@ -41,9 +42,17 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.E))
             rotateZ = -1;
 
+        if (Input.GetKey(KeyCode.R))
+        {
+            rigidbody.linearVelocity = Vector3.zero;
+            rigidbody.angularVelocity = Vector3.zero;
+        }
+
         //          MOVEMENT
-        rigidbody.AddTorque(Vector3.up * (rotateZ * force), forceMode);
+
+        rigidbody.AddTorque(Vector3.up * (rotateZ * torqueForce), torqueForceMode);
         rigidbody.AddForce(movement * force, forceMode);
+
 
         //          SFX
         leftEngine.Set(movement.x > 0);
@@ -52,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Planet"))
+        if (collision.gameObject.CompareTag("Planet"))
         {
             Debug.Log($"Collision with {collision.gameObject.name}");
         }

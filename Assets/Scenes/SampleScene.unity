@@ -1645,8 +1645,20 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4987692626669267220, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
+      propertyPath: forceMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4987692626669267220, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
       propertyPath: toqrueForce
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4987692626669267220, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
+      propertyPath: torqueForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4987692626669267220, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
+      propertyPath: torqueForceMode
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5199231655156409450, guid: 1882882b2f0ad0b44ac5132faa9662f6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
