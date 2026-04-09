@@ -1,30 +1,38 @@
 using UnityEngine;
-using UnityEngine.UIElements;
 
 [RequireComponent(typeof(Rigidbody))]
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Engine leftEngine;
     [SerializeField] private Engine rightEngine;
+    [SerializeField] private Bullet bulletPrefab;
+    [SerializeField] private float bulletSpeed;
+    [SerializeField] private Transform tip;
     [SerializeField] private float force;
     [SerializeField] private float torqueForce;
     [SerializeField] private ForceMode forceMode;
     [SerializeField] private ForceMode torqueForceMode;
 
     private Rigidbody rigidbody;
+    private Vector3 movement;
+    private float rotateZ;
 
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        //          INPUT
-        Vector3 movement = Vector3.zero;
+        Movement();
+        Shoot();
+    }
 
-        float rotateZ = 0;
+    private void Movement()
+    {
+        movement = Vector3.zero;
+        rotateZ = 0;
 
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = 0;
@@ -47,12 +55,22 @@ public class PlayerMovement : MonoBehaviour
             rigidbody.linearVelocity = Vector3.zero;
             rigidbody.angularVelocity = Vector3.zero;
         }
+    }
 
+    private void Shoot()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Bullet bullet = Instantiate(bulletPrefab, tip.position, Quaternion.identity);
+            bullet.Logic(bulletSpeed);
+        }
+    }
+
+    private void FixedUpdate()
+    {   
         //          MOVEMENT
-
         rigidbody.AddTorque(Vector3.up * (rotateZ * torqueForce), torqueForceMode);
         rigidbody.AddForce(movement * force, forceMode);
-
 
         //          SFX
         leftEngine.Set(movement.x > 0);
