@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Bullet bulletPrefab;
     [SerializeField] private float bulletSpeed;
     [SerializeField] private Transform tip;
+    [SerializeField] private float speed;
     [SerializeField] private float force;
     [SerializeField] private float torqueForce;
     [SerializeField] private ForceMode forceMode;
@@ -16,7 +17,8 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody rigidbody;
     private Vector3 movement;
-    private float rotateZ;
+    private Vector3 rotate;
+    private bool kinecticMovement = true;
 
     private void Awake()
     {
@@ -32,45 +34,69 @@ public class PlayerController : MonoBehaviour
     private void Movement()
     {
         movement = Vector3.zero;
-        rotateZ = 0;
-
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = 0;
-        movement.z = Input.GetAxisRaw("Vertical");
+        rotate = Vector3.zero;
 
         if (Input.GetKey(KeyCode.Space))
-            movement.y = 1;
+            movement.z = 1;
 
-        if (Input.GetKey(KeyCode.LeftShift))
-            movement.y = -1;
+        rotate.x = Input.GetAxisRaw("Vertical");
 
         if (Input.GetKey(KeyCode.Q))
-            rotateZ = 1;
-
+        {
+            rotate.y = -1;
+        }
         if (Input.GetKey(KeyCode.E))
-            rotateZ = -1;
+        {
+            rotate.y = 1;
+        }
+
+        
+        rotate.z = Input.GetAxisRaw("Horizontal");
+
 
         if (Input.GetKey(KeyCode.R))
         {
             rigidbody.linearVelocity = Vector3.zero;
             rigidbody.angularVelocity = Vector3.zero;
         }
+
+        if (Input.GetKeyDown(KeyCode.J))
+        {            
+            kinecticMovement = true;
+        }
+
+        if(kinecticMovement)
+        {
+            Debug.Log("using kinectic movement");
+        }
+
+        if (kinecticMovement && Input.GetKeyDown(KeyCode.K))
+        {
+            Debug.Log("using physics");
+            kinecticMovement = false;
+        }
+
+        gameObject.transform.Rotate(rotate, speed * Time.deltaTime);
+        gameObject.transform.Translate(transform.up * (movement.z * speed * Time.deltaTime), Space.World);
     }
 
     private void Shoot()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Bullet bullet = Instantiate(bulletPrefab, tip.position, Quaternion.identity);
+            Bullet bullet = Instantiate(bulletPrefab, tip.position, tip.rotation);
             bullet.Logic(bulletSpeed);
         }
     }
 
     private void FixedUpdate()
-    {   
+    {
         //          MOVEMENT
-        rigidbody.AddTorque(Vector3.up * (rotateZ * torqueForce), torqueForceMode);
-        rigidbody.AddForce(movement * force, forceMode);
+        if (!kinecticMovement)
+        {
+            rigidbody.AddTorque(rotate * torqueForce, torqueForceMode);
+            rigidbody.AddForce(transform.up * (movement.z * force), forceMode);
+        }
 
         //          SFX
         leftEngine.Set(movement.x > 0);
