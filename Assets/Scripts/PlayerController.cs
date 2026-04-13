@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private ForceMode forceMode;
     [SerializeField] private ForceMode torqueForceMode;
 
+    private GameManager gameManager;
+
     private Rigidbody rigidbody;
     private Vector3 movement;
     private Vector3 rotate;
@@ -22,6 +24,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        gameManager = FindAnyObjectByType<GameManager>();
         rigidbody = GetComponent<Rigidbody>();
     }
 
@@ -50,7 +53,7 @@ public class PlayerController : MonoBehaviour
             rotate.y = 1;
         }
 
-        
+
         rotate.z = Input.GetAxisRaw("Horizontal");
 
 
@@ -61,11 +64,11 @@ public class PlayerController : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.J))
-        {            
+        {
             kinecticMovement = true;
         }
 
-        if(kinecticMovement)
+        if (kinecticMovement)
         {
             Debug.Log("using kinectic movement");
         }
@@ -108,6 +111,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Planet"))
         {
             Debug.Log($"Collision with {collision.gameObject.name}");
+            gameManager.ResetGame();
         }
     }
 }
