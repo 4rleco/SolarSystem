@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Bullet bulletPrefab;
     [SerializeField] private float bulletSpeed;
     [SerializeField] private Transform tip;
+    [SerializeField] private Transform bulletPool;
     [SerializeField] private float speed;
     [SerializeField] private float force;
     [SerializeField] private float torqueForce;

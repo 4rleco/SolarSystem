@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 1426265092477875640}
   - component: {fileID: 6196143667971959178}
   - component: {fileID: 6717412887176290789}
-  m_Layer: 0
+  - component: {fileID: 3257777443334053367}
+  m_Layer: 7
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +109,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -153,3 +154,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ddd93491b14ad4582e3882fcf11917, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
+  particlesPrefab: {fileID: 1573909353279050127, guid: dcd2df865e1d13948afbbe941cf1b720, type: 3}
+--- !u!114 &3257777443334053367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735793297854053514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac6ff4aa614ceb4caa152cb1dffe372, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DieTimer
+  lifeTime: 10

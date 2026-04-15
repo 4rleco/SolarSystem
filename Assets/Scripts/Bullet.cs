@@ -4,6 +4,7 @@
 
 class Bullet : MonoBehaviour
 {
+    [SerializeField] private GameObject particlesPrefab;
     private Rigidbody rigidbody;
 
     private void Awake()
@@ -14,5 +15,12 @@ class Bullet : MonoBehaviour
     public void Logic(float speed)
     {
         rigidbody.AddForce(transform.forward * speed);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Instantiate(particlesPrefab, transform.position, Quaternion.identity);
+        Destroy(other.gameObject);
+        Destroy(gameObject);
     }
 }
