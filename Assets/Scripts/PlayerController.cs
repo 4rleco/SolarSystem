@@ -109,7 +109,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Planet"))
+        if (collision.gameObject.CompareTag("Planet") || collision.gameObject.CompareTag("Sun"))
         {
             Debug.Log($"Collision with {collision.gameObject.name}");
             gameManager.ResetGame();

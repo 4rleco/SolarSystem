@@ -1217,7 +1217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7218802702604163120, guid: 247bcebeb5087754c9103f0cbd1a751a, type: 3}
       propertyPath: m_TagString
-      value: Planet
+      value: Sun
       objectReference: {fileID: 0}
     - target: {fileID: 8872628901958855497, guid: 247bcebeb5087754c9103f0cbd1a751a, type: 3}
       propertyPath: m_LocalScale.x
@@ -1675,7 +1675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8900119068710250974, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.2
+      value: -2.75
       objectReference: {fileID: 0}
     - target: {fileID: 8900119068710250974, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
       propertyPath: m_LocalRotation.w

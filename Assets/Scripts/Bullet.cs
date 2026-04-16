@@ -19,8 +19,11 @@ class Bullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Instantiate(particlesPrefab, transform.position, Quaternion.identity);
-        Destroy(other.gameObject);
+        if (!other.gameObject.CompareTag("Sun"))
+        {
+            Instantiate(particlesPrefab, transform.position, Quaternion.identity);
+            Destroy(other.gameObject);
+        }
         Destroy(gameObject);
     }
 }
