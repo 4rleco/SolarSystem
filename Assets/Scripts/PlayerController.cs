@@ -26,10 +26,11 @@ public class PlayerController : MonoBehaviour
     private GameManager gameManager;
 
     private Rigidbody rigidbody;
+
     private Vector3 movement;
     private Vector3 rotate;
+
     private bool kinecticMovement = true;
-    private bool destroyed = false;
 
     private void Awake()
     {
@@ -118,15 +119,13 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-
         Debug.Log($"Collision with {collision.gameObject.name}");
         Instantiate(particlesPrefab, transform.position, Quaternion.identity);
-        Destroy(gameObject, 5f);
-        destroyed = true;
+        Destroy(gameObject, 2.0f);
+    }
 
-        if (destroyed)
-        {
-            gameManager.ResetGame();
-        }
+    private void OnDestroy()
+    {
+        gameManager.ResetGame();
     }
 }
