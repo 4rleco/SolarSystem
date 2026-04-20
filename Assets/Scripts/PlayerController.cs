@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Prefabs")]
     [SerializeField] private Engine leftEngine;
     [SerializeField] private Engine rightEngine;
     [SerializeField] private Bullet bulletPrefab;
+    [SerializeField] private GameObject particlesPrefab;
+
+    [Header("Bullet")]
     [SerializeField] private float bulletSpeed;
     [SerializeField] private Transform tip;
     [SerializeField] private Transform bulletPool;
+
+    [Header("Movement")]
     [SerializeField] private float speed;
+    [SerializeField] private float rotationSpeed;
     [SerializeField] private float force;
     [SerializeField] private float torqueForce;
     [SerializeField] private ForceMode forceMode;
@@ -22,6 +29,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 movement;
     private Vector3 rotate;
     private bool kinecticMovement = true;
+    private bool destroyed = false;
 
     private void Awake()
     {
@@ -80,7 +88,8 @@ public class PlayerController : MonoBehaviour
             kinecticMovement = false;
         }
 
-        gameObject.transform.Rotate(rotate, speed * Time.deltaTime);
+        //          Kinetic MOVEMENT
+        gameObject.transform.Rotate(rotate, rotationSpeed * Time.deltaTime);
         gameObject.transform.Translate(transform.up * (movement.z * speed * Time.deltaTime), Space.World);
     }
 
@@ -95,7 +104,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //          MOVEMENT
+        //          Force MOVEMENT
         if (!kinecticMovement)
         {
             rigidbody.AddTorque(rotate * torqueForce, torqueForceMode);
@@ -103,15 +112,20 @@ public class PlayerController : MonoBehaviour
         }
 
         //          SFX
-        leftEngine.Set(movement.x > 0);
-        rightEngine.Set(movement.x < 0);
+        leftEngine.Set(rotate.z > 0);
+        rightEngine.Set(rotate.z < 0);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Planet") || collision.gameObject.CompareTag("Sun"))
+
+        Debug.Log($"Collision with {collision.gameObject.name}");
+        Instantiate(particlesPrefab, transform.position, Quaternion.identity);
+        Destroy(gameObject, 5f);
+        destroyed = true;
+
+        if (destroyed)
         {
-            Debug.Log($"Collision with {collision.gameObject.name}");
             gameManager.ResetGame();
         }
     }
