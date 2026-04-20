@@ -688,6 +688,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &819642301 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4987692626669267220, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
+  m_PrefabInstance: {fileID: 8719371798023202618}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b818331accb8fb43a6ccb8b98a5cfd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,6 +1592,67 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &6688150919509902679
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -1332565964206097859, guid: 4b20ed50df1148547a9ea76f0de0fa55, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 819642301}
+    - target: {fileID: 4108560148814925413, guid: 4b20ed50df1148547a9ea76f0de0fa55, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 27.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108560148814925413, guid: 4b20ed50df1148547a9ea76f0de0fa55, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108560148814925413, guid: 4b20ed50df1148547a9ea76f0de0fa55, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 101.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108560148814925413, guid: 4b20ed50df1148547a9ea76f0de0fa55, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108560148814925413, guid: 4b20ed50df1148547a9ea76f0de0fa55, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108560148814925413, guid: 4b20ed50df1148547a9ea76f0de0fa55, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108560148814925413, guid: 4b20ed50df1148547a9ea76f0de0fa55, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108560148814925413, guid: 4b20ed50df1148547a9ea76f0de0fa55, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108560148814925413, guid: 4b20ed50df1148547a9ea76f0de0fa55, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108560148814925413, guid: 4b20ed50df1148547a9ea76f0de0fa55, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7723862788009850452, guid: 4b20ed50df1148547a9ea76f0de0fa55, type: 3}
+      propertyPath: m_Name
+      value: AsteroidSpawner
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4b20ed50df1148547a9ea76f0de0fa55, type: 3}
 --- !u!1001 &8719371798023202618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1645,6 +1717,14 @@ PrefabInstance:
       propertyPath: bulletSpeed
       value: 700
       objectReference: {fileID: 0}
+    - target: {fileID: 4987692626669267220, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
+      propertyPath: rotationSpeed
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4987692626669267220, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
+      propertyPath: particlesPrefab
+      value: 
+      objectReference: {fileID: 1573909353279050127, guid: dcd2df865e1d13948afbbe941cf1b720, type: 3}
     - target: {fileID: 7667488467244488342, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1726,4 +1806,5 @@ SceneRoots:
   - {fileID: 341063889}
   - {fileID: 1018843468}
   - {fileID: 1687733030}
+  - {fileID: 6688150919509902679}
   - {fileID: 8719371798023202618}
