@@ -10108,7 +10108,7 @@ MonoBehaviour:
   rightEngine: {fileID: 5559246987686039102}
   bulletPrefab: {fileID: 6717412887176290789, guid: 9e4d07fcb56e61941a53e8be3a3599a7, type: 3}
   particlesPrefab: {fileID: 1573909353279050127, guid: dcd2df865e1d13948afbbe941cf1b720, type: 3}
-  audioSource: {fileID: 523786080115319643}
+  deathSound: {fileID: 523786080115319643}
   bulletSpeed: 700
   tip: {fileID: 8220499061527718021}
   bulletPool: {fileID: 3151180185683134114}

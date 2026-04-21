@@ -1592,11 +1592,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!82 &2111005639 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 523786080115319643, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-  m_PrefabInstance: {fileID: 8719371798023202618}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6688150919509902679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1666,13 +1661,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4987692626669267220, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-      propertyPath: deathSound
-      value: 
-      objectReference: {fileID: 2111005639}
     - target: {fileID: 7667488467244488342, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7913690800720854297, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
+      propertyPath: m_TagString
+      value: MainCamera
       objectReference: {fileID: 0}
     - target: {fileID: 8900119068710250974, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
       propertyPath: m_LocalPosition.x
