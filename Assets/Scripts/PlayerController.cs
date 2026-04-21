@@ -39,6 +39,10 @@ public class PlayerController : MonoBehaviour
     {
         gameManager = FindAnyObjectByType<GameManager>();
         rigidbody = GetComponent<Rigidbody>();
+
+        //locks the cursor to the middle of the screen and makes it invisible
+        Cursor.lockState = CursorLockMode.Locked;
+
         deathSound.Stop();
     }
 
