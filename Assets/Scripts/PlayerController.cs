@@ -10,6 +10,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Bullet bulletPrefab;
     [SerializeField] private GameObject particlesPrefab;
 
+    [Header("Components")]
+    [SerializeField] private AudioSource deathSound;
+
     [Header("Bullet")]
     [SerializeField] private float bulletSpeed;
     [SerializeField] private Transform tip;
@@ -36,6 +39,7 @@ public class PlayerController : MonoBehaviour
     {
         gameManager = FindAnyObjectByType<GameManager>();
         rigidbody = GetComponent<Rigidbody>();
+        deathSound.Stop();
     }
 
     private void Update()
@@ -121,6 +125,7 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log($"Collision with {collision.gameObject.name}");
         Instantiate(particlesPrefab, transform.position, Quaternion.identity);
+        deathSound.Play();
         Destroy(gameObject, 2.0f);
     }
 

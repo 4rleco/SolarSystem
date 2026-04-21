@@ -1592,6 +1592,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!82 &2111005639 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 523786080115319643, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
+  m_PrefabInstance: {fileID: 8719371798023202618}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6688150919509902679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1661,89 +1666,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6287847742278582, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 936686269587249173, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3151180185683134114, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3151180185683134114, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3151180185683134114, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3151180185683134114, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3151180185683134114, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3151180185683134114, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3151180185683134114, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3151180185683134114, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3151180185683134114, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3955803215458422979, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4702690676057938218, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 4987692626669267220, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-      propertyPath: bulletSpeed
-      value: 700
-      objectReference: {fileID: 0}
-    - target: {fileID: 4987692626669267220, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-      propertyPath: rotationSpeed
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 4987692626669267220, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-      propertyPath: particlesPrefab
+      propertyPath: deathSound
       value: 
-      objectReference: {fileID: 1573909353279050127, guid: dcd2df865e1d13948afbbe941cf1b720, type: 3}
+      objectReference: {fileID: 2111005639}
     - target: {fileID: 7667488467244488342, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7667488467244488342, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7913690800720854297, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8666070222586190825, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8888207232462557692, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8900119068710250974, guid: a74dd59dfb874814f9c8104adaebb447, type: 3}
       propertyPath: m_LocalPosition.x
